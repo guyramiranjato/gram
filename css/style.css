@@ -1,313 +1,44 @@
-/* ============================================================
-   RESET & BASE
-   ============================================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8fafc;
-    color: #1e293b;
-    line-height: 1.6;
-}
+header { background: #0f172a; color: white; padding: 50px 20px; text-align: left; }
+.header-container { max-width: 1100px; margin: auto; }
+.lang-switch { margin-bottom: 20px; font-size: 0.9rem; }
+.lang-switch a { color: #94a3b8; text-decoration: none; margin: 0 5px; }
+.lang-switch a.active { color: #38bdf8; font-weight: bold; }
 
-/* ============================================================
-   HEADER & NAVIGATION
-   ============================================================ */
-header {
-    background: #0f172a;
-    color: white;
-    padding: 40px 20px;
-}
+section { max-width: 1100px; margin: auto; padding: 60px 20px; }
+h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+.section-subtitle { text-align: center; color: #64748b; margin-top: -30px; margin-bottom: 40px; }
 
-.header-container {
-    max-width: 1100px;
-    margin: auto;
-    position: relative;
-}
+.card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+.card:hover { transform: translateY(-5px); }
 
-.lang-switch {
-    text-align: right;
-    margin-bottom: 20px;
-}
+/* Grilles */
+.apropos-grid, .parcours-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.timeline-card { border-top: 4px solid #f97316; }
 
-.lang-switch a {
-    color: #94a3b8;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-    font-weight: bold;
-}
+/* Profil Card */
+.profil-card { text-align: center; }
+.profile-photo { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #f97316; margin-bottom: 15px; }
+.social-links a { font-size: 1.5rem; color: #64748b; margin: 0 10px; }
+.social-links a:hover { color: #f97316; }
 
-.lang-switch a.active, .lang-switch a:hover {
-    color: #38bdf8;
-}
+/* Contact Section */
+.contact-container { display: grid; grid-template-columns: 1.5fr 1fr; gap: 30px; }
+.contact-form form { display: flex; flex-direction: column; gap: 15px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px; background: #f8fafc; }
+.btn-submit { background: #38bdf8; color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: bold; }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
+.icon-orange { color: #f97316; margin-right: 10px; }
+.info-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+.info-item i { color: #f97316; background: #fff7ed; padding: 10px; border-radius: 50%; }
+.label { display: block; font-size: 0.8rem; color: #94a3b8; }
+.value { font-weight: bold; }
 
-header p {
-    font-size: 1.2rem;
-    color: #38bdf8;
-}
+.btn { display: inline-block; background: #38bdf8; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin-top: 20px; }
 
-/* ============================================================
-   SECTIONS GÉNÉRALES
-   ============================================================ */
-section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 60px 20px;
-}
+footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 30px; margin-top: 40px; }
 
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #0f172a;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: #64748b;
-    margin-bottom: 40px;
-}
-
-/* ============================================================
-   GRILLES (GRID SYSTEM)
-   ============================================================ */
-.apropos-grid, .parcours-grid, .skills-grid, .contact-grid {
-    display: grid;
-    gap: 30px;
-}
-
-.apropos-grid, .parcours-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.contact-grid {
-    grid-template-columns: 1.5fr 1fr;
-    align-items: start;
-}
-
-/* ============================================================
-   CARTES (CARDS)
-   ============================================================ */
-.card {
-    background: white;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    margin-bottom: 15px;
-    color: #0f172a;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* ============================================================
-   COMPÉTENCES (SKILLS)
-   ============================================================ */
-.skill-item {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.skill-item i {
-    font-size: 2.5rem;
-    color: #38bdf8;
-    display: block;
-    margin-bottom: 15px;
-}
-
-.skill-item span {
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-/* ============================================================
-   PROFIL & PHOTOS
-   ============================================================ */
-.profil-card {
-    text-align: center;
-}
-
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #38bdf8;
-    margin-bottom: 20px;
-}
-
-.info-list {
-    list-style: none;
-    padding: 0;
-}
-
-.info-list li {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* ============================================================
-   SECTION CONTACT & FORMULAIRE
-   ============================================================ */
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    text-align: left;
-}
-
-.form-group label {
-    font-size: 0.85rem;
-    font-weight: bold;
-    color: #475569;
-}
-
-.form-group input, .form-group textarea {
-    padding: 12px;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    background: #f8fafc;
-    font-family: inherit;
-    font-size: 1rem;
-}
-
-.contact-info-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 15px !important;
-    text-align: left;
-}
-
-.info-icon {
-    font-size: 1.2rem;
-    color: #38bdf8;
-    background: #f0f9ff;
-    padding: 12px;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info-label {
-    font-size: 0.75rem;
-    color: #64748b;
-    margin-bottom: 2px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-    justify-content: start;
-}
-
-.social-icons a {
-    font-size: 1.8rem;
-    color: #0f172a;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #38bdf8;
-}
-
-/* ============================================================
-   BOUTONS (BUTTONS)
-   ============================================================ */
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    background: #38bdf8;
-    color: #0f172a;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background 0.3s, color 0.3s;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-}
-
-.btn:hover {
-    background: #0ea5e9;
-    color: white;
-}
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-footer {
-    text-align: center;
-    padding: 40px;
-    background: #0f172a;
-    color: #94a3b8;
-    margin-top: 60px;
-}
-
-/* ============================================================
-   RESPONSIVE DESIGN (TABLETTES & MOBILES)
-   ============================================================ */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    .contact-grid, .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    section {
-        padding: 40px 15px;
-    }
-}
+@media (max-width: 768px) { .contact-container, .form-row { grid-template-columns: 1fr; } }
