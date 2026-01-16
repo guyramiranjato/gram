@@ -10,7 +10,19 @@
 <body>
 
 <header>
-    <div class="header-container">
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Mi</span>
+            <ul class="nav-links">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#path">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="header" class="header-content">
         <div class="lang-switch">
             <a href="index.html">🇫🇷 FR</a> | <a href="index-en.html" class="active">🇬🇧 EN</a>
         </div>
@@ -23,46 +35,70 @@
     <section id="about">
         <div class="apropos-grid">
             <div class="card">
-                <h3><i class="fas fa-user-tie icon-orange"></i> Profile</h3>
+                <h3><i class="fas fa-user-tie icon-orange"></i> Professional Profile</h3>
                 <p>Senior Systems Administrator with extensive expertise in Windows and Linux server administration, virtualization, and security.</p>
-                <p>Managing critical production environments at BASAN Group.</p>
-                <a href="cv/curriculumvitae-en.pdf" target="_blank" class="btn">📄 Download CV (PDF)</a>
+                <p>Highly experienced in managing critical production environments and ensuring high availability.</p>
+                <a href="cv/curriculumvitae-en.pdf" target="_blank" class="btn">📄 Download Resume (PDF)</a>
             </div>
             <div class="card profil-card">
                 <img src="images/profile.png" alt="Guy Aymard" class="profile-photo">
                 <h3>Guy Aymard</h3>
                 <p>📍 Madagascar</p>
                 <div class="social-links">
-                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/votre-profil" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/guyramiranjato" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="fab fa-windows"></i><span>Windows Server / AD</span></div>
+            <div class="skill-item"><i class="fab fa-linux"></i><span>Linux Administration</span></div>
+            <div class="skill-item"><i class="fas fa-server"></i><span>VMware / Hyper-V</span></div>
+            <div class="skill-item"><i class="fas fa-shield-virus"></i><span>Veeam / DRP</span></div>
+        </div>
+    </section>
+
     <section id="path">
-        <h2>Academic & Professional Path</h2>
-        <div class="parcours-grid">
-            <div class="card timeline-card">
-                <div class="card-header">
+        <h2 class="title-main">Academic & Professional Path</h2>
+        <p class="section-subtitle">An overview of my education and professional background.</p>
+        
+        <div class="parcours-container">
+            <div class="path-section">
+                <div class="path-header">
                     <i class="fas fa-university icon-orange"></i>
                     <h3>Education</h3>
                 </div>
-                <div class="timeline-content">
-                    <h4>Master's in Systems & Networks</h4>
+                <div class="card path-card">
+                    <h4>Master's in IT Systems and Networks</h4>
                     <p class="institution">CNTEMAD</p>
-                    <div class="meta"><span>📅 2019</span> <span>📍 Madagascar</span></div>
+                    <div class="meta">
+                        <span><i class="far fa-calendar-alt"></i> 2019</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Madagascar</span>
+                    </div>
+                    <p>Specialization in systems administration and infrastructure security.</p>
                 </div>
             </div>
-            <div class="card timeline-card">
-                <div class="card-header">
-                    <i class="fas fa-briefcase icon-orange"></i>
+
+            <div class="path-section">
+                <div class="path-header">
+                    <i class="fas fa-user-tie icon-orange"></i>
                     <h3>Work Experience</h3>
                 </div>
-                <div class="timeline-content">
+                <div class="card path-card">
                     <h4>Senior Systems Administrator</h4>
                     <p class="institution">BASAN Group</p>
-                    <div class="meta"><span>🕒 Aug 2022 - Present</span></div>
+                    <div class="meta">
+                        <span><i class="far fa-clock"></i> August 2022 - Present</span>
+                    </div>
+                    <ul class="skills-list">
+                        <li>Infrastructure management (Windows/Linux)</li>
+                        <li>Tier 3 technical support</li>
+                        <li>Backups and disaster recovery planning</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -70,28 +106,66 @@
 
     <section id="contact">
         <h2>Get in Touch</h2>
+        <p class="section-subtitle">Always open to discussing new opportunities and tech projects.</p>
+        
         <div class="contact-container">
             <div class="card contact-form">
                 <h3>Send me a message</h3>
                 <form action="https://formspree.io/f/VOTRE_ID" method="POST">
                     <div class="form-row">
-                        <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
-                        <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
                     </div>
-                    <div class="form-group"><label>Message</label><textarea name="message" rows="4" required></textarea></div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" name="subject" placeholder="What would you like to discuss?">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="4" placeholder="Your message..."></textarea>
+                    </div>
                     <button type="submit" class="btn-submit">Send Message</button>
                 </form>
             </div>
+
             <div class="contact-sidebar">
                 <div class="card info-box">
-                    <div class="info-item"><i class="fas fa-envelope"></i><div><span class="label">Email</span><span class="value">guy_ramiranjato@yahoo.fr</span></div></div>
-                    <div class="info-item"><i class="fab fa-whatsapp"></i><div><span class="label">WhatsApp</span><span class="value">+261 34 90 433 38</span></div></div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="label">Email</span>
+                            <span class="value">guy_ramiranjato@yahoo.fr</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <span class="label">WhatsApp</span>
+                            <span class="value">+261 34 90 433 38</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="label">Location</span>
+                            <span class="value">Antananarivo, Madagascar</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
-<footer><p>© 2026 – Guy Aymard Ramiranjato</p></footer>
+<footer>
+    <p>© 2026 – Guy Aymard Ramiranjato</p>
+</footer>
+
 </body>
 </html>
