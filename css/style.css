@@ -1,4 +1,6 @@
-/* RESET & BASE */
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,9 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+/* ============================================================
+   HEADER & NAVIGATION
+   ============================================================ */
 header {
     background: #0f172a;
     color: white;
@@ -35,6 +39,7 @@ header {
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
+    font-weight: bold;
 }
 
 .lang-switch a.active, .lang-switch a:hover {
@@ -51,7 +56,9 @@ header p {
     color: #38bdf8;
 }
 
-/* SECTIONS */
+/* ============================================================
+   SECTIONS GÉNÉRALES
+   ============================================================ */
 section {
     max-width: 1100px;
     margin: auto;
@@ -71,19 +78,30 @@ h2 {
     margin-bottom: 40px;
 }
 
-/* GRILLES */
-.apropos-grid, .parcours-grid, .skills-grid {
+/* ============================================================
+   GRILLES (GRID SYSTEM)
+   ============================================================ */
+.apropos-grid, .parcours-grid, .skills-grid, .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-/* SKILLS SPECIFIC GRID */
+.apropos-grid, .parcours-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-/* CARTES */
+.contact-grid {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
+}
+
+/* ============================================================
+   CARTES (CARDS)
+   ============================================================ */
 .card {
     background: white;
     padding: 30px;
@@ -104,7 +122,9 @@ h2 {
     gap: 10px;
 }
 
-/* SKILL ITEMS */
+/* ============================================================
+   COMPÉTENCES (SKILLS)
+   ============================================================ */
 .skill-item {
     background: white;
     padding: 25px;
@@ -125,7 +145,9 @@ h2 {
     font-size: 0.9rem;
 }
 
-/* PROFIL */
+/* ============================================================
+   PROFIL & PHOTOS
+   ============================================================ */
 .profil-card {
     text-align: center;
 }
@@ -152,17 +174,109 @@ h2 {
     gap: 10px;
 }
 
-/* BOUTON */
+/* ============================================================
+   SECTION CONTACT & FORMULAIRE
+   ============================================================ */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #475569;
+}
+
+.form-group input, .form-group textarea {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px !important;
+    text-align: left;
+}
+
+.info-icon {
+    font-size: 1.2rem;
+    color: #38bdf8;
+    background: #f0f9ff;
+    padding: 12px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-label {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-bottom: 2px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: start;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: #0f172a;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #38bdf8;
+}
+
+/* ============================================================
+   BOUTONS (BUTTONS)
+   ============================================================ */
 .btn {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 10px;
     background: #38bdf8;
     color: #0f172a;
     padding: 12px 24px;
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
@@ -170,11 +284,30 @@ h2 {
     color: white;
 }
 
-/* FOOTER */
+/* ============================================================
+   FOOTER
+   ============================================================ */
 footer {
     text-align: center;
     padding: 40px;
     background: #0f172a;
     color: #94a3b8;
     margin-top: 60px;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN (TABLETTES & MOBILES)
+   ============================================================ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-grid, .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 40px 15px;
+    }
 }
