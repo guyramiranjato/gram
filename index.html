@@ -2,108 +2,114 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio – Administrateur Systèmes Senior</title>
+    <title>Portfolio – Guy Aymard Ramiranjato</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-    <h1>Guy Aymard Ramiranjato</h1>
-    <p>Administrateur Systèmes Informatiques Senior</p>
+    <div class="header-container">
+        <div class="lang-switch">
+            <a href="index.html" class="active">🇫🇷 FR</a> | <a href="index-en.html">🇬🇧 EN</a>
+        </div>
+        <h1>Guy Aymard Ramiranjato</h1>
+        <p>Administrateur Systèmes Informatiques Senior</p>
+    </div>
 </header>
 
 <main>
 
-    <!-- ================== A PROPOS ================== -->
     <section id="apropos">
         <h2>À propos de moi</h2>
         <p class="section-subtitle">
-            Administrateur systèmes expérimenté, spécialisé dans la gestion
-            des infrastructures critiques.
+            Expertise en gestion d'infrastructures critiques et support niveau 3.
         </p>
 
         <div class="apropos-grid">
-
-            <!-- Carte description -->
             <div class="card">
-                <h3>Mon profil</h3>
+                <h3><i class="fas fa-user-tie"></i> Mon profil</h3>
                 <p>
-                    Administrateur Systèmes Informatiques Senior avec une solide
-                    expérience dans l’administration des serveurs Windows et Linux,
-                    la virtualisation, la messagerie, la sauvegarde et la supervision.
+                    Administrateur Systèmes Senior avec une solide expérience dans l’administration 
+                    des serveurs Windows et Linux, la virtualisation et la sécurité.
                 </p>
                 <p>
-                    Habitué aux environnements de production exigeants,
-                    au support niveau 3 et à la résolution d’incidents critiques.
+                    Habitué aux environnements de production exigeants et à la résolution d’incidents critiques 
+                    pour garantir la continuité de service.
                 </p>
 
                 <a href="cv/curriculumvitae.pdf" target="_blank" class="btn">
-                    📄 Télécharger mon CV (PDF)
+                    <i class="fas fa-file-pdf"></i> Télécharger mon CV (PDF)
                 </a>
             </div>
 
-            <!-- Carte photo + infos -->
             <div class="card profil-card">
-                <img src="images/profile.png"
-                     alt="Photo professionnelle"
-                     class="profile-photo">
-
-                <h3>Guy Aymard Ramiranjato</h3>
-
+                <img src="images/profile.png" alt="Guy Aymard" class="profile-photo">
+                <h3>Guy Aymard</h3>
                 <ul class="info-list">
-                    <li>💼 Administrateur Systèmes Senior</li>
-                    <li>🏢 Groupe BASAN</li>
-                    <li>📍 Madagascar</li>
+                    <li><i class="fas fa-briefcase"></i> Administrateur Systèmes Senior</li>
+                    <li><i class="fas fa-building"></i> Groupe BASAN</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Madagascar</li>
                 </ul>
             </div>
-
         </div>
     </section>
 
-    <!-- ================== PARCOURS ================== -->
+    <section id="competences">
+        <h2>Compétences Techniques</h2>
+        <p class="section-subtitle">Maîtrise des outils et technologies d'infrastructure.</p>
+        
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fab fa-windows"></i>
+                <span>Windows Server / AD</span>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-linux"></i>
+                <span>Linux Administration</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-server"></i>
+                <span>VMware / Hyper-V</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-envelope-open-text"></i>
+                <span>Exchange / M365</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-shield-virus"></i>
+                <span>Veeam Backup & PRA</span>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-chart-area"></i>
+                <span>Zabbix / Supervision</span>
+            </div>
+        </div>
+    </section>
+
     <section id="parcours">
-        <h2>Parcours académique & professionnel</h2>
-        <p class="section-subtitle">
-            Mon parcours académique et mon expérience professionnelle.
-        </p>
-
+        <h2>Parcours</h2>
         <div class="parcours-grid">
-
-            <!-- Académique -->
             <div class="card">
-                <h3>🎓 Parcours académique</h3>
+                <h3>🎓 Académique</h3>
                 <p><strong>Master Informatique Systèmes et Réseaux</strong></p>
                 <p>CNTEMAD – 2019</p>
-                <ul>
-                    <li>Administration systèmes et réseaux</li>
-                    <li>Virtualisation et sécurité</li>
-                    <li>Gestion d’infrastructures IT</li>
-                </ul>
             </div>
 
-            <!-- Professionnel -->
             <div class="card">
-                <h3>💼 Parcours professionnel</h3>
+                <h3>💼 Professionnel</h3>
                 <p><strong>Administrateur Systèmes – Groupe BASAN</strong></p>
-                <p>Août 2022 – Aujourd’hui</p>
-                <ul>
-                    <li>Administration Active Directory & Exchange</li>
-                    <li>Gestion des serveurs Windows & Linux</li>
-                    <li>Sauvegardes et PRA (Veeam)</li>
-                    <li>Supervision & support niveau 3</li>
-                </ul>
+                <p>Août 2022 – Présent</p>
             </div>
-
         </div>
     </section>
 
 </main>
 
 <footer>
-    <p>© 2026 – Guy Aymard Ramiranjato</p>
+    <p>© 2026 – Guy Aymard Ramiranjato | <i class="fab fa-linkedin"></i> LinkedIn</p>
 </footer>
 
 </body>
