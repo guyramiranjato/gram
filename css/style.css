@@ -1,35 +1,13 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', sans-serif; background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+/* Style pour les colonnes de parcours */
+.parcours-container { margin-top: 20px; }
+.parcours-card { border-left: 4px solid #f97316; margin-bottom: 15px; }
+.parcours-card h4 { color: #1e293b; margin-bottom: 5px; }
 
-/* NAVBAR BLANCHE ET FIXE */
-.navbar { background: white; padding: 15px 0; width: 100%; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #f1f5f9; }
-.nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
-.nav-links { list-style: none; display: flex; gap: 20px; }
-.nav-links a { text-decoration: none; color: #64748b; font-weight: bold; }
+/* Style pour les compétences (Skills) */
+.skill-item { background: #f1f5f9; padding: 10px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; display: flex; align-items: center; gap: 8px; }
+.icon-orange { color: #f97316; }
 
-/* HEADER */
-header { padding: 40px 20px; text-align: center; background: #fff; border-bottom: 1px solid #f1f5f9; }
-.lang-switch { margin-bottom: 10px; font-weight: bold; }
-.lang-switch a { text-decoration: none; color: #38bdf8; }
-.lang-switch a.active { color: #94a3b8; }
-
-/* PROFIL (Photo Gauche / Texte Droite) */
-section { max-width: 1100px; margin: auto; padding: 50px 20px; }
-.card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-.profile-card { display: flex; gap: 40px; align-items: center; }
-.profile-left { flex: 0 0 200px; text-align: center; }
-.profile-img { width: 100%; border-radius: 10px; border: 3px solid #f97316; padding: 3px; }
-.icon-orange { color: #f97316; margin-right: 10px; }
-
-/* CONTACT */
-.contact-container { display: grid; grid-template-columns: 1.5fr 1fr; gap: 30px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-.form-group { margin-bottom: 15px; }
-.form-group label { display: block; font-weight: bold; margin-bottom: 5px; }
-.form-group input, textarea { width: 100%; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px; }
-.btn-submit { background-color: #38bdf8; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; margin-top: 10px; }
-.info-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-.info-item i { color: #f97316; background: #fff7ed; padding: 12px; border-radius: 50%; }
-.label { font-weight: bold; color: #64748b; margin-right: 5px; }
-
-@media (max-width: 768px) { .profile-card, .contact-container, .form-row { display: flex; flex-direction: column; } }
+/* Responsive */
+@media (max-width: 768px) {
+    .parcours-container, .contact-container, .profile-card { grid-template-columns: 1fr !important; display: flex; flex-direction: column; }
+}
