@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio – Guy Aymard Ramiranjato</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,104 +12,78 @@
 <header>
     <div class="header-container">
         <div class="lang-switch">
-            <a href="index.html">🇫🇷 FR</a> | <a href="index-en.html" class="active">🇬🇧 EN</a>
+            <a href="index.html" class="active">🇫🇷 FR</a> | <a href="index-en.html">🇬🇧 EN</a>
         </div>
         <h1>Guy Aymard Ramiranjato</h1>
-        <p>Senior IT Systems Administrator</p>
+        <p>Administrateur Systèmes Informatiques Senior</p>
     </div>
 </header>
 
 <main>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p class="section-subtitle">
-            Expertise in critical infrastructure management and Tier 3 technical support.
-        </p>
-
+    <section id="apropos">
+        <h2>À propos de moi</h2>
         <div class="apropos-grid">
             <div class="card">
-                <h3><i class="fas fa-user-tie"></i> Professional Profile</h3>
-                <p>
-                    Senior Systems Administrator with extensive experience in managing 
-                    Windows and Linux environments, virtualization, and security.
-                </p>
-                <p>
-                    Strong background in high-availability production environments, 
-                    ensuring business continuity through proactive maintenance and rapid incident response.
-                </p>
-
-                <a href="cv/curriculumvitae-en.pdf" target="_blank" class="btn">
-                    <i class="fas fa-file-pdf"></i> Download Resume (PDF)
-                </a>
+                <h3><i class="fas fa-user-tie"></i> Mon profil</h3>
+                <p>Administrateur Systèmes Senior avec une solide expérience dans l’administration des serveurs Windows et Linux, la virtualisation et la sécurité.</p>
+                <p>Habitué aux environnements de production exigeants et à la résolution d’incidents critiques.</p>
+                <a href="cv/curriculumvitae.pdf" target="_blank" class="btn">📄 Mon CV (PDF)</a>
             </div>
-
             <div class="card profil-card">
                 <img src="images/profile.png" alt="Guy Aymard" class="profile-photo">
                 <h3>Guy Aymard</h3>
                 <ul class="info-list">
-                    <li><i class="fas fa-briefcase"></i> Senior Systems Admin</li>
-                    <li><i class="fas fa-building"></i> BASAN Group</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Madagascar</li>
+                    <li>💼 Administrateur Systèmes Senior</li>
+                    <li>🏢 Groupe BASAN</li>
+                    <li>📍 Madagascar</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <p class="section-subtitle">Proficiency in infrastructure technologies and tools.</p>
-        
+    <section id="competences">
+        <h2>Compétences Techniques</h2>
         <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fab fa-windows"></i>
-                <span>Windows Server / AD</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-linux"></i>
-                <span>Linux Administration</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-server"></i>
-                <span>VMware / Hyper-V</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-envelope-open-text"></i>
-                <span>Exchange / M365</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-shield-virus"></i>
-                <span>Veeam Backup & DRP</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-chart-area"></i>
-                <span>Zabbix / Monitoring</span>
-            </div>
+            <div class="skill-item"><i class="fab fa-windows"></i><span>Windows Server / AD</span></div>
+            <div class="skill-item"><i class="fab fa-linux"></i><span>Linux Admin</span></div>
+            <div class="skill-item"><i class="fas fa-server"></i><span>VMware / Hyper-V</span></div>
+            <div class="skill-item"><i class="fas fa-envelope-open-text"></i><span>Exchange / M365</span></div>
+            <div class="skill-item"><i class="fas fa-shield-virus"></i><span>Veeam / PRA</span></div>
+            <div class="skill-item"><i class="fas fa-chart-area"></i><span>Zabbix / Supervision</span></div>
         </div>
     </section>
 
-    <section id="path">
-        <h2>Career Path</h2>
-        <div class="parcours-grid">
-            <div class="card">
-                <h3>🎓 Education</h3>
-                <p><strong>Master’s Degree in IT Systems and Networks</strong></p>
-                <p>CNTEMAD – 2019</p>
+    <section id="contact">
+        <h2>Restons en contact</h2>
+        <p class="section-subtitle">Toujours partant pour discuter d'opportunités et de projets technologiques.</p>
+        <div class="contact-grid">
+            <div class="card contact-form">
+                <h3>Envoyez-moi un message</h3>
+                <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+                    <div class="form-row">
+                        <div class="form-group"><label>Votre nom</label><input type="text" name="name" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+                    </div>
+                    <div class="form-group"><label>Objet</label><input type="text" name="subject"></div>
+                    <div class="form-group"><label>Message</label><textarea name="message" rows="5"></textarea></div>
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
             </div>
-
-            <div class="card">
-                <h3>💼 Professional Experience</h3>
-                <p><strong>Systems Administrator – BASAN Group</strong></p>
-                <p>August 2022 – Present</p>
+            <div class="contact-info-container">
+                <div class="card info-item"><i class="fas fa-envelope info-icon"></i><div><p class="info-label">Email</p><p>guy_ramiranjato@yahoo.fr</p></div></div>
+                <div class="card info-item"><i class="fab fa-whatsapp info-icon"></i><div><p class="info-label">WhatsApp</p><p>+261 34 90 433 38</p></div></div>
+                <div class="card info-item"><i class="fas fa-map-marker-alt info-icon"></i><div><p class="info-label">Localisation</p><p>Madagascar, Antananarivo</p></div></div>
+                <div class="card follow-me">
+                    <h3>Suivez-moi</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/votre-profil" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/guyramiranjato" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
 </main>
-
-<footer>
-    <p>© 2026 – Guy Aymard Ramiranjato | <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank" style="color:white;"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
-</footer>
-
+<footer><p>© 2026 – Guy Aymard Ramiranjato</p></footer>
 </body>
 </html>
