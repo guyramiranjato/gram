@@ -2,222 +2,108 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Portfolio – Administrateur Systèmes Senior</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Administrateur Systèmes Informatiques Senior | Portfolio</title>
-
-    <meta name="description" content="Administrateur Systèmes Informatiques Senior – Windows, Linux, Virtualisation, Sécurité, Sauvegarde, Monitoring">
-    <meta name="author" content="Guy Aymard Ramiranjato">
-    <meta name="robots" content="index, follow">
-
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-    <h1>Administrateur Systèmes Informatiques Senior</h1>
-    <p>Windows • Linux • Virtualisation • Sécurité • Monitoring</p>
+    <h1>Guy Aymard Ramiranjato</h1>
+    <p>Administrateur Systèmes Informatiques Senior</p>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#experience">Expériences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#education">Formations</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<main>
 
-<section id="apropos">
-    <h2>À propos de moi</h2>
+    <!-- ================== A PROPOS ================== -->
+    <section id="apropos">
+        <h2>À propos de moi</h2>
+        <p class="section-subtitle">
+            Administrateur systèmes expérimenté, spécialisé dans la gestion
+            des infrastructures critiques.
+        </p>
 
-    <div class="apropos-container">
-        <img src="images/profile.png"
-             alt="Photo professionnelle – Administrateur Systèmes Informatiques Senior"
-             class="profile-photo">
+        <div class="apropos-grid">
 
-        <div class="apropos-text">
-            <p>
-                Administrateur systèmes passionné et expérimenté dans la gestion,
-                la maintenance et l’optimisation des systèmes informatiques.
-            </p>
-            <p>
-                Solide expertise en administration de serveurs, virtualisation,
-                sauvegarde, supervision et résolution d’incidents critiques.
-                Habitué aux environnements de production exigeants et au support de niveau 3.
-            </p>
-            <p>
-                <a href="cv/curriculumvitae.pdf" target="_blank">
+            <!-- Carte description -->
+            <div class="card">
+                <h3>Mon profil</h3>
+                <p>
+                    Administrateur Systèmes Informatiques Senior avec une solide
+                    expérience dans l’administration des serveurs Windows et Linux,
+                    la virtualisation, la messagerie, la sauvegarde et la supervision.
+                </p>
+                <p>
+                    Habitué aux environnements de production exigeants,
+                    au support niveau 3 et à la résolution d’incidents critiques.
+                </p>
+
+                <a href="cv/curriculumvitae.pdf" target="_blank" class="btn">
                     📄 Télécharger mon CV (PDF)
                 </a>
-            </p>
+            </div>
+
+            <!-- Carte photo + infos -->
+            <div class="card profil-card">
+                <img src="images/profile.png"
+                     alt="Photo professionnelle"
+                     class="profile-photo">
+
+                <h3>Guy Aymard Ramiranjato</h3>
+
+                <ul class="info-list">
+                    <li>💼 Administrateur Systèmes Senior</li>
+                    <li>🏢 Groupe BASAN</li>
+                    <li>📍 Madagascar</li>
+                </ul>
+            </div>
+
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="competences">
-    <h2>Compétences techniques</h2>
+    <!-- ================== PARCOURS ================== -->
+    <section id="parcours">
+        <h2>Parcours académique & professionnel</h2>
+        <p class="section-subtitle">
+            Mon parcours académique et mon expérience professionnelle.
+        </p>
 
-    <div class="grid">
-        <div>
-            <h3>Systèmes</h3>
-            <ul>
-                <li>Windows Server (2008 → 2019)</li>
-                <li>Linux (Debian, CentOS)</li>
-                <li>Active Directory, LDAP</li>
-            </ul>
+        <div class="parcours-grid">
+
+            <!-- Académique -->
+            <div class="card">
+                <h3>🎓 Parcours académique</h3>
+                <p><strong>Master Informatique Systèmes et Réseaux</strong></p>
+                <p>CNTEMAD – 2019</p>
+                <ul>
+                    <li>Administration systèmes et réseaux</li>
+                    <li>Virtualisation et sécurité</li>
+                    <li>Gestion d’infrastructures IT</li>
+                </ul>
+            </div>
+
+            <!-- Professionnel -->
+            <div class="card">
+                <h3>💼 Parcours professionnel</h3>
+                <p><strong>Administrateur Systèmes – Groupe BASAN</strong></p>
+                <p>Août 2022 – Aujourd’hui</p>
+                <ul>
+                    <li>Administration Active Directory & Exchange</li>
+                    <li>Gestion des serveurs Windows & Linux</li>
+                    <li>Sauvegardes et PRA (Veeam)</li>
+                    <li>Supervision & support niveau 3</li>
+                </ul>
+            </div>
+
         </div>
+    </section>
 
-        <div>
-            <h3>Virtualisation & DevOps</h3>
-            <ul>
-                <li>VMware, Hyper-V</li>
-                <li>Docker, Kubernetes</li>
-                <li>Jenkins, Git</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Réseaux & Sécurité</h3>
-            <ul>
-                <li>SSL / TLS / LDAPS</li>
-                <li>DNS, DHCP</li>
-                <li>Firewall, SNMP, QoS</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Messagerie & Web</h3>
-            <ul>
-                <li>Exchange 2016</li>
-                <li>Postfix</li>
-                <li>Apache, Tomcat</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Sauvegardes & PRA</h3>
-            <ul>
-                <li>Veeam, Symantec</li>
-                <li>Barman, Ntbackup</li>
-                <li>Plans de reprise après sinistre</li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Monitoring & ITSM</h3>
-            <ul>
-                <li>Centreon, Zabbix, PRTG, Grafana, OpManager</li>
-                <li>GLPI, Graylog, WSUS, Mantis, Helpdesk</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section id="experience">
-    <h2>Expériences professionnelles</h2>
-
-    <article>
-        <h3>Administrateur Systèmes / Ingénieur Systèmes et Réseaux</h3>
-        <span><strong>Groupe BASAN</strong> — Août 2022 à Aujourd’hui</span>
-        <ul>
-            <li>Administration des serveurs Windows et Linux (physiques et virtuels)</li>
-            <li>Gestion VMware, Hyper-V et infrastructures critiques</li>
-            <li>Services réseau : DNS, DHCP, Active Directory, LDAP</li>
-            <li>Messagerie : Exchange 2016, Postfix, Skype for Business</li>
-            <li>Sauvegardes, PRA et mises à jour de sécurité</li>
-            <li>Supervision proactive et résolution d’incidents</li>
-            <li>Support niveau 3 et optimisation du parc informatique</li>
-        </ul>
-    </article>
-
-    <article>
-        <h3>Administrateur Systèmes et Réseaux</h3>
-        <span><strong>NUMEN Madagascar</strong> — 2011 à 2017</span>
-        <ul>
-            <li>Administration réseaux (firewall, routeurs)</li>
-            <li>Gestion serveurs Windows / Linux (Web, BDD, NAS, SAN)</li>
-            <li>Virtualisation VMware et Hyper-V</li>
-            <li>Mise en place GLPI, Centreon, Grafana, Wiki</li>
-            <li>Sauvegardes et restauration de données</li>
-            <li>Support utilisateurs niveaux 2 et 3</li>
-        </ul>
-    </article>
-
-    <article>
-        <h3>Freelance IT</h3>
-        <ul>
-            <li>Mise en place de GLPI et FusionInventory pour INGEDATA</li>
-        </ul>
-    </article>
-</section>
-
-<section id="projets">
-    <h2>Projets réalisés – Groupe BASAN</h2>
-
-    <article>
-        <h3>Administration & Modernisation de l’Infrastructure IT</h3>
-        <span>Août 2022 – Aujourd’hui</span>
-        <ul>
-            <li>Mise en place et supervision du monitoring du parc informatique</li>
-            <li>Conception, déploiement et administration Active Directory & Exchange</li>
-            <li>Documentation en ligne (procédures & base de connaissances)</li>
-            <li>Mise en œuvre des sauvegardes avec Veeam</li>
-            <li>Support niveau 3 et gestion des incidents critiques</li>
-        </ul>
-    </article>
-</section>
-
-<section id="education">
-    <h2>Formations & Certifications</h2>
-
-    <article>
-        <ul>
-            <li><strong>Master Informatique Systèmes et Réseaux</strong> – CNTEMAD (2019)</li>
-            <li>Certification Auditeur Interne – ISO 9001:2015</li>
-            <li>Formation Administration Système CentOS – IT University</li>
-            <li>Formation Administration Microsoft Exchange – 2025</li>
-            <li>Formation Management Positif – 2025</li>
-            <li>Formation Communication Professionnelle – 2024</li>
-        </ul>
-    </article>
-
-    <article>
-        <h3>Langues</h3>
-        <ul>
-            <li>Malagasy : Langue maternelle</li>
-            <li>Français : Lu, écrit, parlé</li>
-            <li>Anglais : Lu, écrit (technique)</li>
-        </ul>
-    </article>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-
-    <p>Email :
-        <a href="mailto:guy_ramiranjato@yahoo.fr">
-            guy_ramiranjato@yahoo.fr
-        </a>
-    </p>
-
-    <p>LinkedIn :
-        <a href="https://www.linkedin.com/in/guy-aymard-ramiranjato-56850396" target="_blank">
-            linkedin.com/in/guy-aymard-ramiranjato
-        </a>
-    </p>
-
-    <p>GitHub :
-        <a href="https://github.com/guyramiranjato" target="_blank">
-            github.com/guyramiranjato
-        </a>
-    </p>
-</section>
+</main>
 
 <footer>
-    <p>© 2026 – Administrateur Systèmes Informatiques Senior</p>
+    <p>© 2026 – Guy Aymard Ramiranjato</p>
 </footer>
 
 </body>
