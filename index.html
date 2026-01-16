@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - Guy Aymard Ramiranjato</title>
+    <title>Guy Aymard Ramiranjato – Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -79,25 +79,20 @@
         <div class="contact-container">
             <div class="card contact-form">
                 <h3>Envoyez-moi un message</h3>
-                <form action="#" method="POST">
+                <form action="https://formspree.io/f/mqakpjne" method="POST">
                     <div class="form-row">
-                        <div class="form-group"><label>Nom</label><input type="text" placeholder="Nom"></div>
-                        <div class="form-group"><label>Email</label><input type="email" placeholder="Email"></div>
+                        <div class="form-group"><label>Nom</label><input type="text" name="name" placeholder="Votre nom" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="votre@email.com" required></div>
                     </div>
-                    <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Votre message"></textarea></div>
+                    <div class="form-group"><label>Message</label><textarea name="message" rows="4" placeholder="Votre message..." required></textarea></div>
                     <button type="submit" class="btn-submit">Envoyer le message</button>
                 </form>
             </div>
             <div class="contact-sidebar">
                 <div class="card info-box">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div><span class="label">Email :</span><span class="value">guy_ramiranjato@yahoo.fr</span></div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <div><span class="label">WhatsApp :</span><span class="value">+261 34 90 433 38</span></div>
-                    </div>
+                    <div class="info-item"><i class="fas fa-envelope"></i><div><span class="label">Email :</span><span class="value">guy_ramiranjato@yahoo.fr</span></div></div>
+                    <div class="info-item"><i class="fab fa-whatsapp"></i><div><span class="label">WhatsApp :</span><span class="value">+261 34 90 433 38</span></div></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><span class="label">Localisation :</span><span class="value">Madagascar, Antananarivo</span></div></div>
                 </div>
             </div>
         </div>
