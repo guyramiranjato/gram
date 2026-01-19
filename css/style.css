@@ -1,72 +1,43 @@
-/* Base & Colors */
 :root {
-    --primary: #0284c7; /* Bleu tech moderne */
-    --primary-dark: #0369a1;
+    --primary: #0284c7;
+    --accent: #f97316; /* Orange pour le parcours et les icônes */
     --bg: #f8fafc;
-    --text-main: #1e293b;
-    --text-light: #64748b;
-    --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --text: #1e293b;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Inter', 'Segoe UI', sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
-/* Navbar */
-.navbar { background: white; padding: 1rem 0; width: 100%; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 1000; }
-.nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
-.nav-logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); letter-spacing: -1px; }
+/* Navbar & Header */
+.navbar { background: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
+.nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; padding: 0 20px; }
+.nav-logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
 .nav-links { list-style: none; display: flex; gap: 20px; }
-.nav-links a { text-decoration: none; color: var(--text-light); font-weight: 500; transition: 0.3s; font-size: 0.9rem; }
-.nav-links a:hover { color: var(--primary); }
+.nav-links a { text-decoration: none; color: #64748b; font-weight: 500; }
 
-/* Header */
-header { padding: 100px 20px 60px; text-align: center; background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%); }
-h1 { font-size: 2.8rem; margin-bottom: 10px; color: #0f172a; }
-.role-title { font-size: 1.25rem; color: var(--primary); font-weight: 600; margin-bottom: 20px; }
-.header-badges { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-.header-badges span { background: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; border: 1px solid #e2e8f0; color: var(--text-light); }
-
-/* Sections */
-section { max-width: 1100px; margin: auto; padding: 80px 20px; }
-h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; position: relative; }
-h2::after { content: ''; width: 50px; height: 4px; background: var(--primary); display: block; margin: 10px auto; border-radius: 2px; }
+header { padding: 80px 20px; text-align: center; background: white; }
+.role-title { font-size: 1.5rem; font-weight: 600; color: var(--text); margin-bottom: 20px; }
+.header-badges span { display: inline-block; background: #f1f5f9; padding: 8px 15px; border-radius: 5px; margin: 5px; font-size: 0.9rem; font-weight: 500; }
 
 /* Cards */
-.card { background: white; padding: 30px; border-radius: 12px; box-shadow: var(--card-shadow); border: 1px solid #f1f5f9; }
+.card { background: white; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
 
-/* Profile Card */
-.profile-card { display: flex; gap: 40px; align-items: center; }
-.profile-left { flex: 0 0 220px; text-align: center; }
-.profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid white; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-.profile-socials { margin-top: 15px; font-size: 1.5rem; display: flex; justify-content: center; gap: 15px; }
-.profile-socials a { color: var(--text-light); transition: 0.3s; }
-.profile-socials a:hover { color: var(--primary); }
-.icon-blue { color: var(--primary); margin-right: 10px; }
+/* Skills Style (image_eb1600.png) */
+.skills-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.skill-group h4 { margin-bottom: 15px; color: var(--text); border-bottom: 2px solid #f1f5f9; padding-bottom: 5px; }
+.tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.tags span { background: #f1f5f9; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; color: #475569; font-weight: 600; }
 
-/* Buttons */
-.btn-cv { display: inline-block; background: var(--primary); color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: 0.3s; }
-.btn-cv:hover { background: var(--primary-dark); transform: translateY(-2px); }
-.btn-secondary { margin-left: 10px; color: var(--primary); text-decoration: none; font-weight: 600; }
+/* Parcours Style (image_eb165f.png) */
+.parcours-container { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+.path-card { border-left: 5px solid var(--accent); } /* Bordure orange latérale */
+.path-header { font-weight: bold; font-size: 1.1rem; margin-bottom: 15px; color: var(--text); }
+.text-org { color: var(--accent); font-weight: 700; }
+.text-muted { color: #64748b; font-size: 0.9rem; }
 
-/* Skills Grid */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-.skill-card { text-align: center; transition: 0.3s; }
-.skill-card:hover { transform: translateY(-5px); border-color: var(--primary); }
-.skill-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
-.skill-card h4 { margin-bottom: 10px; }
+/* Contact */
+.btn-submit { background: var(--primary); color: white; border: none; padding: 12px; border-radius: 8px; width: 100%; cursor: pointer; font-weight: bold; }
 
-/* Parcours & Contact */
-.parcours-container, .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-.path-header { font-weight: bold; color: var(--primary); margin-bottom: 15px; font-size: 1.1rem; }
-.btn-submit { background: var(--primary); color: white; border: none; padding: 15px; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.3s; }
-.info-item { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
-.info-item i { background: #f0f9ff; color: var(--primary); padding: 12px; border-radius: 50%; }
-
-footer { text-align: center; padding: 40px; background: #0f172a; color: white; margin-top: 60px; }
-
-/* Responsive */
 @media (max-width: 768px) {
-    .profile-card, .parcours-container, .contact-container { grid-template-columns: 1fr; flex-direction: column; text-align: center; }
-    .form-row { grid-template-columns: 1fr; }
-    h1 { font-size: 2rem; }
+    .parcours-container { grid-template-columns: 1fr; }
+    .profile-card { flex-direction: column; text-align: center; }
 }
