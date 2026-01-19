@@ -1,43 +1,54 @@
 :root {
     --primary: #0284c7;
-    --accent: #f97316; /* Orange pour le parcours et les icônes */
+    --accent: #f97316; /* Orange pour le parcours */
     --bg: #f8fafc;
     --text: #1e293b;
 }
 
 body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
-/* Navbar & Header */
+/* Navbar */
 .navbar { background: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
-.nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; padding: 0 20px; }
+.nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; padding: 0 20px; align-items: center; }
 .nav-logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
 .nav-links { list-style: none; display: flex; gap: 20px; }
-.nav-links a { text-decoration: none; color: #64748b; font-weight: 500; }
+.nav-links a { text-decoration: none; color: #64748b; font-weight: 500; transition: 0.3s; }
+.nav-links a:hover { color: var(--accent); }
 
-header { padding: 80px 20px; text-align: center; background: white; }
-.role-title { font-size: 1.5rem; font-weight: 600; color: var(--text); margin-bottom: 20px; }
-.header-badges span { display: inline-block; background: #f1f5f9; padding: 8px 15px; border-radius: 5px; margin: 5px; font-size: 0.9rem; font-weight: 500; }
+/* Header & Badges */
+header { padding: 60px 20px; text-align: center; background: white; }
+.role-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; }
+.header-badges span { display: inline-block; background: #f1f5f9; padding: 8px 15px; border-radius: 5px; margin: 5px; font-size: 0.85rem; font-weight: 500; color: #475569; }
 
-/* Cards */
-.card { background: white; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+/* Cards Style */
+section { max-width: 1100px; margin: auto; padding: 60px 20px; }
+h2 { text-align: center; margin-bottom: 40px; }
+.card { background: white; padding: 30px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
 
-/* Skills Style (image_eb1600.png) */
+/* Skills Tags (Style image_eb1600.png) */
 .skills-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-.skill-group h4 { margin-bottom: 15px; color: var(--text); border-bottom: 2px solid #f1f5f9; padding-bottom: 5px; }
-.tags { display: flex; flex-wrap: wrap; gap: 10px; }
-.tags span { background: #f1f5f9; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; color: #475569; font-weight: 600; }
+.skill-group h4 { margin-bottom: 15px; color: var(--text); font-weight: 700; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags span { background: #f3f4f6; padding: 4px 12px; border-radius: 15px; font-size: 0.8rem; color: #374151; font-weight: 600; border: 1px solid #e5e7eb; }
 
-/* Parcours Style (image_eb165f.png) */
+/* Parcours (Style image_eb165f.png) */
 .parcours-container { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
-.path-card { border-left: 5px solid var(--accent); } /* Bordure orange latérale */
-.path-header { font-weight: bold; font-size: 1.1rem; margin-bottom: 15px; color: var(--text); }
-.text-org { color: var(--accent); font-weight: 700; }
-.text-muted { color: #64748b; font-size: 0.9rem; }
+.path-card { border-left: 5px solid var(--accent) !important; transition: 0.3s; } /* Bordure orange latérale */
+.path-card:hover { transform: translateX(5px); }
+.path-header { font-weight: bold; font-size: 1.1rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+.text-org { color: var(--accent); font-weight: 700; margin: 5px 0; }
+.text-muted { color: #64748b; font-size: 0.85rem; }
 
-/* Contact */
-.btn-submit { background: var(--primary); color: white; border: none; padding: 12px; border-radius: 8px; width: 100%; cursor: pointer; font-weight: bold; }
+/* Profile Card */
+.profile-card { display: flex; gap: 40px; align-items: center; }
+.profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); }
+.btn-cv { background: var(--primary); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 15px; }
+
+/* Contact Form */
+.btn-submit { background: var(--primary); color: white; border: none; padding: 12px; border-radius: 8px; width: 100%; font-weight: bold; cursor: pointer; }
+
+footer { text-align: center; padding: 40px; background: #0f172a; color: white; margin-top: 50px; }
 
 @media (max-width: 768px) {
-    .parcours-container { grid-template-columns: 1fr; }
-    .profile-card { flex-direction: column; text-align: center; }
+    .parcours-container, .profile-card { grid-template-columns: 1fr; flex-direction: column; text-align: center; }
 }
