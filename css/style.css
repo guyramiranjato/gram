@@ -6,7 +6,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; scroll-behavior: smooth; }
 
 /* Navbar */
 .navbar { background: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e2e8f0; }
@@ -29,35 +29,32 @@ h2 { text-align: center; margin-bottom: 40px; font-size: 1.8rem; }
 /* Profile Card */
 .profile-card { display: flex; gap: 40px; align-items: center; }
 .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 4px solid var(--accent); object-fit: cover; }
-.icon-orange { color: var(--accent); margin-right: 10px; }
+.icon-orange { color: var(--accent) !important; margin-right: 10px; } /* Forcer l'orange sur les icônes */
 .cv-details-grid { margin-top: 15px; display: grid; gap: 10px; font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 15px; }
 .btn-cv { display: inline-block; background: var(--primary); color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; transition: 0.3s; }
-.btn-cv:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3); }
 
-/* Skills Section (Badges) */
+/* Expertise Technique (Icones Orange) */
 .skills-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
-.skill-group h4 { margin-bottom: 15px; color: #0f172a; border-bottom: 2px solid #f1f5f9; padding-bottom: 5px; }
+.skill-group h4 { margin-bottom: 15px; color: #0f172a; border-bottom: 2px solid #f1f5f9; padding-bottom: 5px; display: flex; align-items: center; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tags span { background: #f3f4f6; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; color: #374151; font-weight: 700; border: 1px solid #e5e7eb; }
 
-/* Parcours (Orange Border) */
+/* Parcours (Icones Orange + Border) */
 .parcours-container { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
 .path-card { border-left: 5px solid var(--accent); }
 .path-header { font-weight: bold; font-size: 1.1rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
-.path-item { margin-bottom: 15px; }
+.path-item { margin-bottom: 18px; padding-bottom: 5px; }
 .text-org { color: var(--accent); font-weight: 700; }
 .text-muted { color: #64748b; font-size: 0.85rem; }
 
-/* Contact Section (Eng-inspired) */
+/* Contact Section (Icones Orange) */
 .contact-container { display: grid; grid-template-columns: 1.6fr 1fr; gap: 30px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-.form-group { margin-bottom: 15px; }
 .form-group label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 0.9rem; }
 .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 8px; outline: none; }
 .btn-submit { background: var(--primary); color: white; border: none; padding: 14px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.3s; }
-.btn-submit:hover { background: #0369a1; }
 .info-item { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-.info-item i { color: var(--accent); background: #fff7ed; padding: 12px; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; }
+.info-item i { background: #fff7ed; padding: 12px; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; }
 .label { display: block; font-size: 0.8rem; color: #64748b; }
 .value { font-weight: 600; font-size: 0.9rem; }
 
@@ -65,6 +62,5 @@ footer { text-align: center; padding: 40px; background: #0f172a; color: white; m
 
 @media (max-width: 768px) {
     .profile-card, .parcours-container, .contact-container, .form-row { grid-template-columns: 1fr; flex-direction: column; text-align: center; }
-    .profile-socials { justify-content: center; }
     .info-item { text-align: left; }
 }
