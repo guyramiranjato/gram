@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Guy Aymard Ramiranjato – Portfolio</title>
+    <title>Guy Aymard Ramiranjato – Senior SysAdmin Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,10 +11,11 @@
 
 <nav class="navbar">
     <div class="nav-container">
-        <span class="nav-logo">Mi</span>
+        <span class="nav-logo">GAR.</span>
         <ul class="nav-links">
             <li><a href="#header">Home</a></li>
-            <li><a href="#apropos">About</a></li>
+            <li><a href="#apropos">Profile</a></li>
+            <li><a href="#competences">Skills</a></li>
             <li><a href="#parcours">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -24,10 +25,15 @@
 <header id="header">
     <div class="header-content">
         <div class="lang-switch">
-            <a href="index.html">FR FR</a> | <a href="index-en.html" class="active">GB EN</a>
+            <a href="index.html">FR</a> | <a href="index-en.html" class="active">EN</a>
         </div>
         <h1>Guy Aymard Ramiranjato</h1>
-        <p>Senior IT Systems Administrator</p>
+        <p class="role-title">Senior System Administrator</p>
+        <div class="header-badges">
+            <span><i class="fas fa-check-circle"></i> Tier 3 Support</span>
+            <span><i class="fas fa-shield-alt"></i> Security & DRP</span>
+            <span><i class="fas fa-cloud"></i> Virtualization</span>
+        </div>
     </div>
 </header>
 
@@ -39,77 +45,92 @@
                 <h3 class="profile-name">Guy Aymard</h3>
                 <p class="profile-loc">📍 Madagascar</p>
                 <div class="profile-socials">
-                    <a href="https://www.linkedin.com/in/guy-aymard-ramiranjato-852656113/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/guyramiranjato" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/guyramiranjato" title="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="profile-right">
-                <h3><i class="fas fa-user-tie icon-orange"></i> Profile</h3>
-                <p>Senior Systems Administrator with extensive expertise in Windows and Linux server administration, virtualization, and security.</p>
-                <p>Experienced in managing critical production environments at BASAN Group, including tier 3 support and disaster recovery planning.</p>
-                
-                <div class="skills-grid" style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                    <div class="skill-item"><i class="fas fa-server icon-orange"></i> Windows & Linux Server</div>
-                    <div class="skill-item"><i class="fas fa-shield-alt icon-orange"></i> IT Security</div>
-                    <div class="skill-item"><i class="fas fa-cloud icon-orange"></i> Virtualization</div>
-                    <div class="skill-item"><i class="fas fa-network-wired icon-orange"></i> Tier 3 Support</div>
+                <h3><i class="fas fa-user-tie icon-blue"></i> Professional Profile</h3>
+                <p>Expertise in managing critical infrastructures, administering <strong>Windows and Linux</strong> servers, and ensuring data security.</p>
+                <p>Currently working at <strong>BASAN Group</strong>, I ensure high service availability and implement Disaster Recovery Plans (DRP).</p>
+                <div class="cta-group">
+                    <a href="cv/curriculumvitae.pdf" target="_blank" class="btn-cv">📄 Download Resume (PDF)</a>
+                    <a href="#contact" class="btn-secondary">Get in touch</a>
                 </div>
-                
-                <a href="cv/curriculumvitae-en.pdf" target="_blank" class="btn-cv" style="margin-top: 20px; display: inline-block;">📄 Download CV (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences">
+        <h2>Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="card skill-card">
+                <i class="fab fa-windows"></i>
+                <h4>Systems</h4>
+                <p>Windows Server, AD, Linux Administration</p>
+            </div>
+            <div class="card skill-card">
+                <i class="fas fa-server"></i>
+                <h4>Virtualization</h4>
+                <p>VMware ESXi, Hyper-V</p>
+            </div>
+            <div class="card skill-card">
+                <i class="fas fa-envelope-open-text"></i>
+                <h4>Cloud & Mail</h4>
+                <p>Microsoft 365, Exchange On-premise</p>
+            </div>
+            <div class="card skill-card">
+                <i class="fas fa-shield-virus"></i>
+                <h4>Backup & Recovery</h4>
+                <p>Veeam Backup & Replication, DRP</p>
             </div>
         </div>
     </section>
 
     <section id="parcours">
-        <h2 style="text-align: center; margin-bottom: 30px;">Academic and Professional Background</h2>
-        <div class="parcours-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div class="parcours-column">
-                <h3 style="margin-bottom: 15px;"><i class="fas fa-graduation-cap icon-orange"></i> Academic background</h3>
-                <div class="card parcours-card">
-                    <h4>Master in Computer Science, Systems and Networks</h4>
-                    <p>CNTEMAD</p>
-                    <p><i class="far fa-calendar-alt"></i> 2019</p>
-                </div>
+        <h2>Professional Journey</h2>
+        <div class="parcours-container">
+            <div class="card path-card">
+                <div class="path-header"><i class="fas fa-briefcase"></i> Work Experience</div>
+                <p><strong>System Administrator</strong></p>
+                <p class="text-muted">BASAN Group | Aug 2022 – Present</p>
+                <p>Managing server infrastructure and providing critical level 3 support.</p>
             </div>
-            <div class="parcours-column">
-                <h3 style="margin-bottom: 15px;"><i class="fas fa-briefcase icon-orange"></i> Professional background</h3>
-                <div class="card parcours-card" style="border-left: 4px solid #f97316;">
-                    <h4>Senior Systems Administrator</h4>
-                    <p>BASAN Group</p>
-                    <p><i class="far fa-clock"></i> August 2022 - Present</p>
-                </div>
+            <div class="card path-card">
+                <div class="path-header"><i class="fas fa-graduation-cap"></i> Education</div>
+                <p><strong>Master’s in IT Systems and Networks</strong></p>
+                <p class="text-muted">CNTEMAD | Graduated 2019</p>
+                <p>Specialization in infrastructure engineering and network management.</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Stay in touch</h2>
+        <h2>Contact Me</h2>
         <div class="contact-container">
             <div class="card contact-form">
-                <h3>Send me a message</h3>
-                <form action="https://formspree.io/f/mqakpjne" method="POST">
+                <form onsubmit="window.open('mailto:guy_ramiranjato@yahoo.fr?subject=Portfolio Contact&body=' + encodeURIComponent(document.getElementById('msg').value)); return false;">
                     <div class="form-row">
-                        <div class="form-group"><label>Name</label><input type="text" name="name" placeholder="Name" required></div>
-                        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="guyramiranjato@gmail.com" required></div>
+                        <div class="form-group"><label>Name</label><input type="text" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" required></div>
                     </div>
-                    <div class="form-group"><label>Message</label><textarea name="message" rows="4" placeholder="Your message" required></textarea></div>
-                    <button type="submit" class="btn-submit">Send message</button>
+                    <div class="form-group"><label>Message</label><textarea id="msg" rows="4" placeholder="How can I help you?" required></textarea></div>
+                    <button type="submit" class="btn-submit">Send Message</button>
                 </form>
             </div>
             <div class="contact-sidebar">
                 <div class="card info-box">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div><span class="label">Email :</span><span class="value">guyramiranjato@gmail.com</span></div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <div><span class="label">WhatsApp :</span><span class="value">+261 34 90 433 38</span></div>
-                    </div>
+                    <div class="info-item"><i class="fas fa-envelope"></i> <div><span class="label">Email</span><span class="value">guy_ramiranjato@yahoo.fr</span></div></div>
+                    <div class="info-item"><i class="fab fa-whatsapp"></i> <div><span class="label">WhatsApp</span><span class="value">+261 34 90 433 38</span></div></div>
                 </div>
             </div>
         </div>
     </section>
 </main>
+
+<footer>
+    <p>© 2026 – Guy Aymard Ramiranjato | Infrastructure IT Expert</p>
+</footer>
+
 </body>
 </html>
