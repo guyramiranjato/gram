@@ -9,22 +9,22 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="nav-container">
-        <span class="nav-logo">Mi</span>
-        <ul class="nav-links">
-            <li><a href="#header">Accueil</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<header id="header">
-    <div class="header-content">
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Mi</span>
+            <ul class="nav-links">
+                <li><a href="#header">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#parcours">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="header" class="header-content">
         <div class="lang-switch">
-            <a href="index.html" class="active">FR FR</a> | <a href="index-en.html">GB EN</a>
+            <a href="index.html" class="active">🇫🇷 FR</a> | <a href="index-en.html">🇬🇧 EN</a>
         </div>
         <h1>Guy Aymard Ramiranjato</h1>
         <p>Administrateur Systèmes Informatiques Senior</p>
@@ -33,49 +33,65 @@
 
 <main>
     <section id="apropos">
-        <div class="profile-card card">
-            <div class="profile-left">
-                <img src="images/profile.png" alt="Guy Aymard" class="profile-img">
-                <h3 class="profile-name">Guy Aymard</h3>
-                <p class="profile-loc">📍 Madagascar</p>
-                <div class="profile-socials">
-                    <a href="https://www.linkedin.com/in/guy-aymard-ramiranjato-852656113/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/guyramiranjato" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="profile-right">
+        <div class="apropos-grid">
+            <div class="card">
                 <h3><i class="fas fa-user-tie icon-orange"></i> Mon profil</h3>
                 <p>Administrateur Systèmes Senior avec une solide expertise dans l’administration des serveurs Windows et Linux, la virtualisation et la sécurité.</p>
-                
-                <div class="skills-grid" style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                    <div class="skill-item"><i class="fas fa-server icon-orange"></i> Windows & Linux Server</div>
-                    <div class="skill-item"><i class="fas fa-shield-alt icon-orange"></i> Sécurité Informatique</div>
-                    <div class="skill-item"><i class="fas fa-cloud icon-orange"></i> Virtualisation</div>
-                    <div class="skill-item"><i class="fas fa-network-wired icon-orange"></i> Support Niveau 3</div>
+                <a href="cv/curriculumvitae.pdf" target="_blank" class="btn">📄 Télécharger mon CV (PDF)</a>
+            </div>
+            <div class="card profil-card">
+                <img src="images/profile.png" alt="Guy Aymard" class="profile-photo">
+                <h3>Guy Aymard</h3>
+                <p>📍 Madagascar</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
                 </div>
-                
-                <a href="cv/curriculumvitae.pdf" target="_blank" class="btn-cv" style="margin-top: 20px; display: inline-block;">📄 Télécharger CV (PDF)</a>
             </div>
         </div>
     </section>
 
+    <section id="competences">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="fab fa-windows"></i><span>Windows Server</span></div>
+            <div class="skill-item"><i class="fab fa-linux"></i><span>Linux Admin</span></div>
+            <div class="skill-item"><i class="fas fa-server"></i><span>VMware</span></div>
+            <div class="skill-item"><i class="fas fa-shield-virus"></i><span>Veeam / PRA</span></div>
+        </div>
+    </section>
+
     <section id="parcours">
-        <h2 style="text-align: center; margin-bottom: 30px;">Parcours académique et professionnel</h2>
-        <div class="parcours-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <div class="parcours-column">
-                <h3 style="margin-bottom: 15px;"><i class="fas fa-graduation-cap icon-orange"></i> Parcours académique</h3>
-                <div class="card parcours-card">
+        <h2 class="title-main">Parcours académique et professionnel</h2>
+        <p class="section-subtitle">Un aperçu de mon parcours académique et de mon expérience professionnelle.</p>
+        
+        <div class="parcours-container">
+            <div class="path-section">
+                <div class="path-header">
+                    <i class="fas fa-university icon-orange"></i>
+                    <h3>Parcours académique</h3>
+                </div>
+                <div class="card path-card">
                     <h4>Master Informatique Systèmes et Réseaux</h4>
-                    <p>CNTEMAD</p>
-                    <p><i class="far fa-calendar-alt"></i> 2019</p>
+                    <p class="institution">CNTEMAD</p>
+                    <div class="meta">
+                        <span><i class="far fa-calendar-alt"></i> 2019</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Madagascar</span>
+                    </div>
                 </div>
             </div>
-            <div class="parcours-column">
-                <h3 style="margin-bottom: 15px;"><i class="fas fa-briefcase icon-orange"></i> Parcours professionnel</h3>
-                <div class="card parcours-card">
+
+            <div class="path-section">
+                <div class="path-header">
+                    <i class="fas fa-user-tie icon-orange"></i>
+                    <h3>Parcours professionnel</h3>
+                </div>
+                <div class="card path-card">
                     <h4>Administrateur Systèmes Senior</h4>
-                    <p>Groupe BASAN</p>
-                    <p><i class="far fa-clock"></i> Août 2022 - Présent</p>
+                    <p class="institution">Groupe BASAN</p>
+                    <div class="meta">
+                        <span><i class="far fa-clock"></i> Août 2022 - Présent</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,23 +102,26 @@
         <div class="contact-container">
             <div class="card contact-form">
                 <h3>Envoyez-moi un message</h3>
-                <form action="https://formspree.io/f/mqakpjne" method="POST">
+                <form action="https://formspree.io/f/VOTRE_ID" method="POST">
                     <div class="form-row">
-                        <div class="form-group"><label>Nom</label><input type="text" name="name" placeholder="Nom" required></div>
-                        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="guyramiranjato@gmail.com" required></div>
+                        <div class="form-group"><label>Nom</label><input type="text" name="name" placeholder="Votre nom" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="votre.email@exemple.com" required></div>
                     </div>
-                    <div class="form-group"><label>Message</label><textarea name="message" rows="4" placeholder="Votre message" required></textarea></div>
+                    <div class="form-group"><label>Message</label><textarea name="message" rows="4" placeholder="Votre message..."></textarea></div>
                     <button type="submit" class="btn-submit">Envoyer le message</button>
                 </form>
             </div>
             <div class="contact-sidebar">
                 <div class="card info-box">
-                    <div class="info-item"><i class="fas fa-envelope"></i><div><span class="label">Email :</span><span class="value">guyramiranjato@gmail.com</span></div></div>
-                    <div class="info-item"><i class="fab fa-whatsapp"></i><div><span class="label">WhatsApp :</span><span class="value">+261 34 90 433 38</span></div></div>
+                    <div class="info-item"><i class="fas fa-envelope"></i><div><span class="label">Email</span><span class="value">guy_ramiranjato@yahoo.fr</span></div></div>
+                    <div class="info-item"><i class="fab fa-whatsapp"></i><div><span class="label">WhatsApp</span><span class="value">+261 34 90 433 38</span></div></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><span class="label">Localisation</span><span class="value">Madagascar, Antananarivo</span></div></div>
                 </div>
             </div>
         </div>
     </section>
 </main>
+
+<footer><p>© 2026 – Guy Aymard Ramiranjato</p></footer>
 </body>
 </html>
