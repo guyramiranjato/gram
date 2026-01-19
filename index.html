@@ -1,110 +1,107 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio – Administrateur Systèmes Senior</title>
+    <title>Guy Aymard Ramiranjato – Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<nav class="navbar">
+    <div class="nav-container">
+        <span class="nav-logo">Mi</span>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#path">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
 <header>
-    <h1>Guy Aymard Ramiranjato</h1>
-    <p>Administrateur Systèmes Informatiques Senior</p>
+    <div class="header-content">
+        <div class="lang-switch">
+            <a href="index.html">🇫🇷 FR</a> | <a href="index-en.html" class="active">🇬🇧 EN</a>
+        </div>
+        <h1>Guy Aymard Ramiranjato</h1>
+        <p>Senior IT Systems Administrator</p>
+    </div>
 </header>
 
 <main>
-
-    <!-- ================== A PROPOS ================== -->
-    <section id="apropos">
-        <h2>À propos de moi</h2>
-        <p class="section-subtitle">
-            Administrateur systèmes expérimenté, spécialisé dans la gestion
-            des infrastructures critiques.
-        </p>
-
+    <section id="about">
         <div class="apropos-grid">
-
-            <!-- Carte description -->
             <div class="card">
-                <h3>Mon profil</h3>
-                <p>
-                    Administrateur Systèmes Informatiques Senior avec une solide
-                    expérience dans l’administration des serveurs Windows et Linux,
-                    la virtualisation, la messagerie, la sauvegarde et la supervision.
-                </p>
-                <p>
-                    Habitué aux environnements de production exigeants,
-                    au support niveau 3 et à la résolution d’incidents critiques.
-                </p>
-
-                <a href="cv/curriculumvitae.pdf" target="_blank" class="btn">
-                    📄 Télécharger mon CV (PDF)
-                </a>
+                <h3><i class="fas fa-user-tie icon-orange"></i> Profile</h3>
+                <p>Senior Systems Administrator with extensive expertise in Windows and Linux server administration, virtualization, and security.</p>
+                <a href="cv/curriculumvitae.pdf" target="_blank" class="btn">📄 Download CV (PDF)</a>
             </div>
-
-            <!-- Carte photo + infos -->
             <div class="card profil-card">
-                <img src="images/profile.png"
-                     alt="Photo professionnelle"
-                     class="profile-photo">
-
-                <h3>Guy Aymard Ramiranjato</h3>
-
-                <ul class="info-list">
-                    <li>💼 Administrateur Systèmes Senior</li>
-                    <li>🏢 Groupe BASAN</li>
-                    <li>📍 Madagascar</li>
-                </ul>
+                <img src="images/profile.png" alt="Guy Aymard" class="profile-photo">
+                <h3>Guy Aymard</h3>
+                <p>📍 Madagascar</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/guyramiranjato" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
             </div>
-
         </div>
     </section>
 
-    <!-- ================== PARCOURS ================== -->
-    <section id="parcours">
-        <h2>Parcours académique & professionnel</h2>
-        <p class="section-subtitle">
-            Mon parcours académique et mon expérience professionnelle.
-        </p>
-
-        <div class="parcours-grid">
-
-            <!-- Académique -->
-            <div class="card">
-                <h3>🎓 Parcours académique</h3>
-                <p><strong>Master Informatique Systèmes et Réseaux</strong></p>
-                <p>CNTEMAD – 2019</p>
-                <ul>
-                    <li>Administration systèmes et réseaux</li>
-                    <li>Virtualisation et sécurité</li>
-                    <li>Gestion d’infrastructures IT</li>
-                </ul>
+    <section id="path">
+        <h2 class="title-main">Academic & Professional Path</h2>
+        <p class="section-subtitle">An overview of my education and career.</p>
+        <div class="parcours-container">
+            <div class="path-section">
+                <div class="path-header">
+                    <i class="fas fa-graduation-cap icon-orange"></i>
+                    <h3>Education</h3>
+                </div>
+                <div class="card path-card">
+                    <h4>Master's in Systems & Networks</h4>
+                    <p class="institution">CNTEMAD</p>
+                    <div class="meta"><span><i class="far fa-calendar-alt"></i> 2019</span></div>
+                </div>
             </div>
-
-            <!-- Professionnel -->
-            <div class="card">
-                <h3>💼 Parcours professionnel</h3>
-                <p><strong>Administrateur Systèmes – Groupe BASAN</strong></p>
-                <p>Août 2022 – Aujourd’hui</p>
-                <ul>
-                    <li>Administration Active Directory & Exchange</li>
-                    <li>Gestion des serveurs Windows & Linux</li>
-                    <li>Sauvegardes et PRA (Veeam)</li>
-                    <li>Supervision & support niveau 3</li>
-                </ul>
+            <div class="path-section">
+                <div class="path-header">
+                    <i class="fas fa-briefcase icon-orange"></i>
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="card path-card">
+                    <h4>Senior Systems Administrator</h4>
+                    <p class="institution">BASAN Group</p>
+                    <div class="meta"><span><i class="far fa-clock"></i> Aug 2022 - Present</span></div>
+                </div>
             </div>
-
         </div>
     </section>
 
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="card contact-form">
+                <h3>Send me a message</h3>
+                <form action="https://formspree.io/f/VOTRE_ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
+                    </div>
+                    <div class="form-group"><label>Message</label><textarea name="message" rows="4" required></textarea></div>
+                    <button type="submit" class="btn-submit">Send</button>
+                </form>
+            </div>
+            <div class="contact-sidebar">
+                <div class="card info-box">
+                    <div class="info-item"><i class="fas fa-envelope"></i><div><span class="label">Email</span><span class="value">guy_ramiranjato@yahoo.fr</span></div></div>
+                    <div class="info-item"><i class="fab fa-whatsapp"></i><div><span class="label">WhatsApp</span><span class="value">+261 34 90 433 38</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-
-<footer>
-    <p>© 2026 – Guy Aymard Ramiranjato</p>
-</footer>
-
+<footer><p>© 2026 – Guy Aymard Ramiranjato</p></footer>
 </body>
 </html>
