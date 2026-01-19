@@ -1,115 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio – Guy Aymard Ramiranjato</title>
+    <title>Portfolio – Administrateur Systèmes Senior</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-    <div class="header-container">
-        <div class="lang-switch">
-            <a href="index.html">🇫🇷 FR</a> | <a href="index-en.html" class="active">🇬🇧 EN</a>
-        </div>
-        <h1>Guy Aymard Ramiranjato</h1>
-        <p>Senior IT Systems Administrator</p>
-    </div>
+    <h1>Guy Aymard Ramiranjato</h1>
+    <p>Administrateur Systèmes Informatiques Senior</p>
 </header>
 
 <main>
 
-    <section id="about">
-        <h2>About Me</h2>
+    <!-- ================== A PROPOS ================== -->
+    <section id="apropos">
+        <h2>À propos de moi</h2>
         <p class="section-subtitle">
-            Expertise in critical infrastructure management and Tier 3 technical support.
+            Administrateur systèmes expérimenté, spécialisé dans la gestion
+            des infrastructures critiques.
         </p>
 
         <div class="apropos-grid">
+
+            <!-- Carte description -->
             <div class="card">
-                <h3><i class="fas fa-user-tie"></i> Professional Profile</h3>
+                <h3>Mon profil</h3>
                 <p>
-                    Senior Systems Administrator with extensive experience in managing 
-                    Windows and Linux environments, virtualization, and security.
+                    Administrateur Systèmes Informatiques Senior avec une solide
+                    expérience dans l’administration des serveurs Windows et Linux,
+                    la virtualisation, la messagerie, la sauvegarde et la supervision.
                 </p>
                 <p>
-                    Strong background in high-availability production environments, 
-                    ensuring business continuity through proactive maintenance and rapid incident response.
+                    Habitué aux environnements de production exigeants,
+                    au support niveau 3 et à la résolution d’incidents critiques.
                 </p>
 
-                <a href="cv/curriculumvitae-en.pdf" target="_blank" class="btn">
-                    <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+                <a href="cv/curriculumvitae.pdf" target="_blank" class="btn">
+                    📄 Télécharger mon CV (PDF)
                 </a>
             </div>
 
+            <!-- Carte photo + infos -->
             <div class="card profil-card">
-                <img src="images/profile.png" alt="Guy Aymard" class="profile-photo">
-                <h3>Guy Aymard</h3>
+                <img src="images/profile.png"
+                     alt="Photo professionnelle"
+                     class="profile-photo">
+
+                <h3>Guy Aymard Ramiranjato</h3>
+
                 <ul class="info-list">
-                    <li><i class="fas fa-briefcase"></i> Senior Systems Admin</li>
-                    <li><i class="fas fa-building"></i> BASAN Group</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Madagascar</li>
+                    <li>💼 Administrateur Systèmes Senior</li>
+                    <li>🏢 Groupe BASAN</li>
+                    <li>📍 Madagascar</li>
                 </ul>
             </div>
+
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <p class="section-subtitle">Proficiency in infrastructure technologies and tools.</p>
-        
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fab fa-windows"></i>
-                <span>Windows Server / AD</span>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-linux"></i>
-                <span>Linux Administration</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-server"></i>
-                <span>VMware / Hyper-V</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-envelope-open-text"></i>
-                <span>Exchange / M365</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-shield-virus"></i>
-                <span>Veeam Backup & DRP</span>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-chart-area"></i>
-                <span>Zabbix / Monitoring</span>
-            </div>
-        </div>
-    </section>
+    <!-- ================== PARCOURS ================== -->
+    <section id="parcours">
+        <h2>Parcours académique & professionnel</h2>
+        <p class="section-subtitle">
+            Mon parcours académique et mon expérience professionnelle.
+        </p>
 
-    <section id="path">
-        <h2>Career Path</h2>
         <div class="parcours-grid">
+
+            <!-- Académique -->
             <div class="card">
-                <h3>🎓 Education</h3>
-                <p><strong>Master’s Degree in IT Systems and Networks</strong></p>
+                <h3>🎓 Parcours académique</h3>
+                <p><strong>Master Informatique Systèmes et Réseaux</strong></p>
                 <p>CNTEMAD – 2019</p>
+                <ul>
+                    <li>Administration systèmes et réseaux</li>
+                    <li>Virtualisation et sécurité</li>
+                    <li>Gestion d’infrastructures IT</li>
+                </ul>
             </div>
 
+            <!-- Professionnel -->
             <div class="card">
-                <h3>💼 Professional Experience</h3>
-                <p><strong>Systems Administrator – BASAN Group</strong></p>
-                <p>August 2022 – Present</p>
+                <h3>💼 Parcours professionnel</h3>
+                <p><strong>Administrateur Systèmes – Groupe BASAN</strong></p>
+                <p>Août 2022 – Aujourd’hui</p>
+                <ul>
+                    <li>Administration Active Directory & Exchange</li>
+                    <li>Gestion des serveurs Windows & Linux</li>
+                    <li>Sauvegardes et PRA (Veeam)</li>
+                    <li>Supervision & support niveau 3</li>
+                </ul>
             </div>
+
         </div>
     </section>
 
 </main>
 
 <footer>
-    <p>© 2026 – Guy Aymard Ramiranjato | <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank" style="color:white;"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+    <p>© 2026 – Guy Aymard Ramiranjato</p>
 </footer>
 
 </body>
