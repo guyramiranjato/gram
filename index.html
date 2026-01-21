@@ -14,8 +14,8 @@
         <span class="nav-logo">GAR.</span>
         <ul class="nav-links">
             <li><a href="#header">Accueil</a></li>
-            <li><a href="#apropos">Profil</a></li>
             <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#projets">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -34,49 +34,51 @@
 <main>
     <section id="parcours">
         <h2>Parcours académique et professionnel</h2>
-        <div class="parcours-container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
             <div class="card path-card">
-                <div class="path-header"><i class="fas fa-briefcase icon-orange"></i> Expériences</div>
-                <div class="path-item">
-                    <p class="text-org">08/2022 - Présent</p>
-                    <p><strong>Administrateur Systèmes Senior | BASAN</strong></p>
-                </div>
-                <div class="path-item">
-                    <p class="text-org">2017 - 07/2022</p>
-                    <p><strong>Ingénieur Systèmes | NUMEN</strong></p>
-                </div>
+                <p class="text-org">08/2022 - Présent</p>
+                <p><strong>Administrateur Systèmes Senior | BASAN</strong></p>
+                <p class="text-org">2017 - 07/2022</p>
+                <p><strong>Ingénieur Systèmes | NUMEN</strong></p>
             </div>
             <div class="card path-card">
-                <div class="path-header"><i class="fas fa-graduation-cap icon-orange"></i> Formations</div>
-                <div class="path-item">
-                    <p class="text-org">Décembre 2025</p>
-                    <p><strong>Management Positif</strong></p>
-                </div>
-                <div class="path-item">
-                    <p class="text-org">2019</p>
-                    <p><strong>Master Informatique Systèmes et Réseaux</strong></p>
-                </div>
+                <p class="text-org">Décembre 2025</p>
+                <p><strong>Management Positif</strong></p>
+                <p class="text-org">2019</p>
+                <p><strong>Master Informatique Systèmes et Réseaux</strong></p>
             </div>
         </div>
+    </section>
 
-        <h2 style="margin-top: 40px;">Projets Réalisés</h2>
-        <div class="projets-container">
+    <section id="projets">
+        <h2>Projets Réalisés</h2>
+        <div class="projets-grid">
             <div class="card projet-card">
                 <span class="projet-date">Mars 2025</span>
-                <h4>Nouvel Environnement AD & Exchange</h4>
+                <h4>Environnement AD & Exchange</h4>
                 <p>Mise en place d'un nouvel environnement Active Directory et Exchange 2016.</p>
             </div>
             <div class="card projet-card">
                 <span class="projet-date">Début 2024</span>
                 <h4>Plateforme XWiki</h4>
-                <p>Mise en place de la plateforme XWiki pour la documentation des procédures et bases de connaissances.</p>
+                <p>Déploiement de XWiki pour la documentation des procédures.</p>
+            </div>
+            <div class="card projet-card">
+                <span class="projet-date">2024</span>
+                <h4>Kubernetes & Graylog</h4>
+                <p>Mise en production d'applications sur Kubernetes et audit d'accès via Graylog.</p>
+            </div>
+            <div class="card projet-card">
+                <span class="projet-date">2023</span>
+                <h4>WSUS & GLPI</h4>
+                <p>Mise en place de WSUS pour les mises à jour et de GLPI avec glpi-event.</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="contact-container">
-            <div class="card contact-form">
+            <div class="card">
                 <form onsubmit="window.open('mailto:guy_ramiranjato@yahoo.fr?body=' + encodeURIComponent(document.getElementById('msg').value)); return false;">
                     <div class="form-row">
                         <div class="form-group"><label>Nom</label><input type="text" placeholder="Votre nom" required></div>
@@ -87,9 +89,9 @@
                 </form>
             </div>
             <div class="contact-sidebar">
-                <div class="card info-box">
-                    <div class="info-item"><i class="fas fa-phone icon-orange"></i><div><span class="label">Tél :</span><span class="value">034 90 433 38 / 032 84 104 08</span></div></div>
-                    <div class="info-item"><i class="fas fa-map-marker-alt icon-orange"></i><div><span class="label">Localisation :</span><span class="value">2011 Bis 67Ha N.O, Antananarivo</span></div></div>
+                <div class="card">
+                    <div class="info-item"><i class="fas fa-phone"></i><div><span class="label">Téléphone :</span><span class="value">034 90 433 38 / 032 84 104 08</span></div></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><span class="label">Localisation :</span><span class="value">2011 Bis 67Ha N.O, Antananarivo</span></div></div>
                 </div>
             </div>
         </div>
