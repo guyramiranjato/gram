@@ -2,16 +2,18 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Guy Aymard Ramiranjato | Senior SysAdmin</title>
+    <title>Guy Aymard Ramiranjato | Senior SysAdmin & DevOps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <nav class="navbar">
     <div class="nav-container">
         <span class="nav-logo">GAR.</span>
         <ul class="nav-links">
+            <li><a href="#header">Accueil</a></li>
             <li><a href="#apropos">Profil</a></li>
             <li><a href="#competences">Expertise</a></li>
             <li><a href="#parcours">Parcours</a></li>
@@ -21,22 +23,43 @@
     </div>
 </nav>
 
-<header>
-    <div class="lang-switch"><a href="index.html" class="active">FR</a> | <a href="index-en.html">EN</a></div>
-    <h1>Guy Aymard Ramiranjato</h1>
-    <p class="role-title">Administrateur Systèmes Informatiques Senior / Ingénieur DevOps</p>
+<header id="header">
+    <div class="header-content">
+        <div class="lang-switch">
+            <a href="index.html" class="active">FR</a> | <a href="index-en.html">EN</a>
+        </div>
+        <h1>Guy Aymard Ramiranjato</h1>
+        <p class="role-title">Administrateur Systèmes Informatiques Senior / Ingénieur DevOps</p>
+        <div class="header-badges">
+            <span><i class="fas fa-server"></i> Windows & Linux Expert</span>
+            <span><i class="fas fa-infinity"></i> CI/CD & Kubernetes</span>
+            <span><i class="fas fa-shield-alt"></i> Sécurité & PRA</span>
+        </div>
+    </div>
 </header>
 
 <main>
     <section id="apropos">
-        <div class="card profile-card">
-            <img src="img/profile.png" alt="Photo" class="profile-img">
-            <div>
-                <h2>À propos de moi</h2>
-                <p>Expert en administration de systèmes critiques avec plus de 13 ans d'expérience...</p>
-                <div style="margin-top:15px; font-size:0.9rem;">
-                    <p><i class="fas fa-map-marker-alt icon-orange"></i> 2011 Bis 67Ha N.O, Antananarivo</p>
+        <div class="profile-card card">
+            <div class="profile-left">
+                <img src="images/profile.png" alt="Guy Aymard" class="profile-img">
+                <h3 class="profile-name">Guy Aymard</h3>
+                <p class="profile-loc">📍 2011 Bis 67Ha N.O, Antananarivo</p>
+                <div class="profile-socials">
+                    <a href="https://www.linkedin.com/in/guy-aymard-ramiranjato-a56708143/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/guyramiranjato" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
+            </div>
+            <div class="profile-right">
+                <h3><i class="fas fa-user-tie icon-orange"></i> Moi en quelques mots</h3>
+                <p>Passionné et expérimenté dans la gestion, la maintenance et l’optimisation d’infrastructures critiques. Compétences avancées en administration hybride, virtualisation et haute disponibilité.</p>
+                <p>Expertise pointue en messagerie (Exchange 2016), support niveau 3, et déploiement automatisé via Jenkins sur Kubernetes.</p>
+                
+                <div class="cv-details-grid">
+                    <div class="cv-detail-item"><strong>Langues :</strong> Malagasy (Maternel), Français (Courant), Anglais (Technique)</div>
+                    <div class="cv-detail-item"><strong>Intérêts :</strong> Sport, Voyages, Nouvelles Technologies</div>
+                </div>
+                <a href="cv/curriculumvitae.pdf" target="_blank" class="btn-cv">📄 Télécharger mon CV complet</a>
             </div>
         </div>
     </section>
@@ -44,13 +67,27 @@
     <section id="competences">
         <h2>Expertise Technique</h2>
         <div class="skills-flex">
-            <div class="card">
-                <h4><i class="fas fa-server icon-orange"></i> Systèmes</h4>
-                <div class="tags"><span>Windows Server</span><span>Linux CentOS/Debian</span><span>Active Directory</span></div>
+            <div class="card skill-group">
+                <h4><i class="fas fa-cogs icon-orange"></i> Systèmes & DevOps</h4>
+                <div class="tags">
+                    <span>Windows Server (2008-2022)</span><span>Debian / CentOS</span>
+                    <span>Docker / Kubernetes</span><span>Jenkins / Git</span>
+                    <span>Shell / Bash</span><span>Active Directory / LDAP</span>
+                </div>
             </div>
-            <div class="card">
-                <h4><i class="fas fa-infinity icon-orange"></i> DevOps</h4>
-                <div class="tags"><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>Git</span></div>
+            <div class="card skill-group">
+                <h4><i class="fas fa-network-wired icon-orange"></i> Réseaux & Mail</h4>
+                <div class="tags">
+                    <span>Exchange 2016</span><span>Postfix</span><span>Skype for Business</span>
+                    <span>VPN / VLAN</span><span>QoS / SNMP</span><span>DNS / DHCP</span>
+                </div>
+            </div>
+            <div class="card skill-group">
+                <h4><i class="fas fa-shield-alt icon-orange"></i> Monitoring & Outils</h4>
+                <div class="tags">
+                    <span>Zabbix / Nagios</span><span>Grafana / Centreon</span><span>Prtg / OpManager</span>
+                    <span>Veeam / Symantec</span><span>GLPI / Fusion Inventory</span><span>Mantis / Helpdesk</span>
+                </div>
             </div>
         </div>
     </section>
@@ -59,14 +96,55 @@
         <h2>Parcours académique et professionnel</h2>
         <div class="parcours-container">
             <div class="card path-card">
-                <h4>Expériences</h4>
-                <p class="text-org">2022 - Présent</p><p>Admin Systèmes Senior | BASAN</p>
-                <p class="text-org">2017 - 2022</p><p>Ingénieur Systèmes | NUMEN</p>
+                <div class="path-header"><i class="fas fa-briefcase icon-orange"></i> Expériences Professionnelles</div>
+                <div class="path-item">
+                    <p class="text-org">08/2022 - Présent</p>
+                    <p><strong>Administrateur Systèmes | BASAN</strong></p>
+                    <small>Maintenance Exchange 2016, déploiement Kubernetes via Jenkins, support Niveau 3.</small>
+                </div>
+                <div class="path-item">
+                    <p class="text-org">2017 - 07/2022</p>
+                    <p><strong>Ingénieur Systèmes et Réseaux | NUMEN</strong></p>
+                    <small>Infrastructure critique, virtualisation VMware/Hyper-V, sécurisation ISA.</small>
+                </div>
+                <div class="path-item">
+                    <p class="text-org">Freelance</p>
+                    <p><strong>Expert GLPI | INGEDATA</strong></p>
+                    <small>Audit et mise en place complète de GLPI + Fusion Inventory.</small>
+                </div>
+                <div class="path-item">
+                    <p class="text-org">2011 - 2017</p>
+                    <p><strong>Technicien IT | NUMEN Madagascar</strong></p>
+                    <small>Support utilisateur, monitoring, sauvegardes et restaurations.</small>
+                </div>
             </div>
             <div class="card path-card">
-                <h4>Formations</h4>
-                <p class="text-org">2025</p><p>Management Positif</p>
-                <p class="text-org">2019</p><p>Master Informatique</p>
+                <div class="path-header"><i class="fas fa-graduation-cap icon-orange"></i> Formations & Diplômes</div>
+                <div class="path-item">
+                    <p class="text-org">Décembre 2025</p>
+                    <p><strong>Management Positif</strong></p>
+                    <p class="text-muted">Formation en leadership</p>
+                </div>
+                <div class="path-item">
+                    <p class="text-org">Octobre 2024</p>
+                    <p><strong>Administration MS Exchange Server 2016</strong></p>
+                    <p class="text-muted">Mindtech</p>
+                </div>
+                <div class="path-item">
+                    <p class="text-org">2019</p>
+                    <p><strong>Master en Informatique Systèmes et Réseaux</strong></p>
+                    <p class="text-muted">CNTEMAD</p>
+                </div>
+                <div class="path-item">
+                    <p class="text-org">Janvier 2018</p>
+                    <p><strong>Admin Système Linux CentOS</strong></p>
+                    <p class="text-muted">IT University</p>
+                </div>
+                <div class="path-item">
+                    <p class="text-org">Certification</p>
+                    <p><strong>Auditeur Interne Qualité (ISO 9001)</strong></p>
+                    <p class="text-muted">Culture et Excellence</p>
+                </div>
             </div>
         </div>
     </section>
@@ -74,27 +152,56 @@
     <section id="projets">
         <h2>Projets Réalisés</h2>
         <div class="projets-grid">
-            <div class="card projet-card"><span class="projet-date">2025</span><h4>AD & Exchange</h4><p>Mise en place AD et Exchange 2016.</p></div>
-            <div class="card projet-card"><span class="projet-date">2024</span><h4>Kubernetes</h4><p>Applications internes sur Kubernetes.</p></div>
-            <div class="card projet-card"><span class="projet-date">2024</span><h4>XWiki</h4><p>Documentation des procédures.</p></div>
-            <div class="card projet-card"><span class="projet-date">2023</span><h4>Graylog & WSUS</h4><p>Audit serveurs et mises à jour automatiques.</p></div>
-            <div class="card projet-card"><span class="projet-date">2023</span><h4>GLPI</h4><p>Gestion de parc avec glpi-event.</p></div>
+            <div class="card projet-card">
+                <span class="projet-date">Mars 2025</span>
+                <h4>Environnement AD & Exchange 2016</h4>
+                <p>Mise en place complète d'une nouvelle architecture Active Directory et d'un serveur Exchange 2016.</p>
+            </div>
+            <div class="card projet-card">
+                <span class="projet-date">Début 2024</span>
+                <h4>Plateforme XWiki</h4>
+                <p>Mise en place de la plateforme XWiki pour la documentation des procédures et bases de connaissances.</p>
+            </div>
+            <div class="card projet-card">
+                <span class="projet-date">2024</span>
+                <h4>Kubernetes & Graylog</h4>
+                <p>Mise en production d'applications sur Kubernetes et outil d'audit des accès serveurs avec Graylog.</p>
+            </div>
+            <div class="card projet-card">
+                <span class="projet-date">2023</span>
+                <h4>WSUS & GLPI-Event</h4>
+                <p>Gestion automatique des mises à jour via WSUS et mise en place de GLPI avec glpi-event.</p>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>Contactez-moi</h2>
         <div class="contact-container">
-            <div class="card">
-                <form>
-                    <input type="text" placeholder="Nom" required style="margin-bottom:10px; display:block; width:100%; padding:10px;">
-                    <textarea placeholder="Message" rows="4" style="width:100%; padding:10px;"></textarea>
-                    <button class="btn-submit" style="margin-top:10px;">Envoyer</button>
+            <div class="card contact-form">
+                <form onsubmit="window.open('mailto:guy_ramiranjato@yahoo.fr?subject=Contact Portfolio&body=' + encodeURIComponent(document.getElementById('msg').value)); return false;">
+                    <div class="form-row">
+                        <div class="form-group"><label>Nom</label><input type="text" placeholder="Votre nom" required></div>
+                        <div class="form-group"><label>Email</label><input type="email" placeholder="votre@email.com" required></div>
+                    </div>
+                    <div class="form-group"><label>Message</label><textarea id="msg" rows="4" placeholder="Comment puis-je vous aider ?" required></textarea></div>
+                    <button type="submit" class="btn-submit">Envoyer le message</button>
                 </form>
+            </div>
+            <div class="contact-sidebar">
+                <div class="card info-box">
+                    <div class="info-item"><i class="fas fa-phone icon-orange"></i><div><span class="label">Téléphone :</span><span class="value">034 90 433 38 / 032 84 104 08</span></div></div>
+                    <div class="info-item"><i class="fas fa-envelope icon-orange"></i><div><span class="label">Email :</span><span class="value">guy_ramiranjato@yahoo.fr</span></div></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt icon-orange"></i><div><span class="label">Localisation :</span><span class="value">Antananarivo, Madagascar</span></div></div>
+                </div>
             </div>
         </div>
     </section>
 </main>
-<footer><p>© 2026 – Guy Aymard Ramiranjato</p></footer>
+
+<footer>
+    <p>© 2026 – Guy Aymard Ramiranjato | Expert Infrastructure SI & DevOps</p>
+</footer>
+
 </body>
 </html>
