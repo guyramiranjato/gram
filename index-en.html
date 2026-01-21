@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Guy Aymard Ramiranjato | Senior SysAdmin Portfolio</title>
+    <title>Guy Aymard Ramiranjato | Senior SysAdmin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <nav class="navbar">
     <div class="nav-container">
         <span class="nav-logo">GAR.</span>
         <ul class="nav-links">
-            <li><a href="#header">Home</a></li>
+            <li><a href="#apropos">Profile</a></li>
+            <li><a href="#competences">Expertise</a></li>
             <li><a href="#parcours">Background</a></li>
             <li><a href="#projets">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -21,31 +21,52 @@
     </div>
 </nav>
 
-<header id="header">
-    <div class="header-content">
-        <div class="lang-switch">
-            <a href="index.html">FR</a> | <a href="index-en.html" class="active">EN</a>
-        </div>
-        <h1>Guy Aymard Ramiranjato</h1>
-        <p class="role-title">Senior IT System Administrator / DevOps Engineer</p>
-    </div>
+<header>
+    <div class="lang-switch"><a href="index.html">FR</a> | <a href="index-en.html" class="active">EN</a></div>
+    <h1>Guy Aymard Ramiranjato</h1>
+    <p class="role-title">Senior IT System Administrator / DevOps Engineer</p>
 </header>
 
 <main>
+    <section id="apropos">
+        <div class="card profile-card">
+            <img src="img/profile.png" alt="Photo" class="profile-img">
+            <div>
+                <h2>About Me</h2>
+                <p>Expert in critical systems administration with over 13 years of experience...</p>
+                <div style="margin-top:15px; font-size:0.9rem;">
+                    <p><i class="fas fa-map-marker-alt icon-orange"></i> 2011 Bis 67Ha N.O, Antananarivo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences">
+        <h2>Technical Expertise</h2>
+        <div class="skills-flex">
+            <div class="card">
+                <h4><i class="fas fa-server icon-orange"></i> Systems</h4>
+                <div class="tags"><span>Windows Server</span><span>Linux CentOS/Debian</span><span>Active Directory</span></div>
+            </div>
+            <div class="card">
+                <h4><i class="fas fa-infinity icon-orange"></i> DevOps</h4>
+                <div class="tags"><span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>Git</span></div>
+            </div>
+        </div>
+    </section>
+
     <section id="parcours">
         <h2>Academic and Professional Background</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+        <div class="parcours-container">
             <div class="card path-card">
-                <p class="text-org">08/2022 - Present</p>
-                <p><strong>Senior System Administrator | BASAN</strong></p>
-                <p class="text-org">2017 - 07/2022</p>
-                <p><strong>Systems Engineer | NUMEN</strong></p>
+                <h4>Experience</h4>
+                <p class="text-org">2022 - Present</p><p>Senior SysAdmin | BASAN</p>
+                <p class="text-org">2017 - 2022</p><p>Systems Engineer | NUMEN</p>
             </div>
             <div class="card path-card">
-                <p class="text-org">December 2025</p>
-                <p><strong>Positive Management</strong></p>
-                <p class="text-org">2019</p>
-                <p><strong>Master’s in IT Systems and Networks</strong></p>
+                <h4>Education</h4>
+                <p class="text-org">2025</p><p>Positive Management</p>
+                <p class="text-org">2019</p><p>Master's in IT</p>
             </div>
         </div>
     </section>
@@ -53,49 +74,27 @@
     <section id="projets">
         <h2>Key Projects</h2>
         <div class="projets-grid">
-            <div class="card projet-card">
-                <span class="projet-date">March 2025</span>
-                <h4>AD & Exchange Environment</h4>
-                <p>Implementation of a new Active Directory and Exchange 2016 environment.</p>
-            </div>
-            <div class="card projet-card">
-                <span class="projet-date">Early 2024</span>
-                <h4>XWiki Platform</h4>
-                <p>Deployment of XWiki for technical procedure documentation.</p>
-            </div>
-            <div class="card projet-card">
-                <span class="projet-date">2024</span>
-                <h4>Kubernetes & Graylog</h4>
-                <p>Internal apps production on Kubernetes and server access audit via Graylog.</p>
-            </div>
-            <div class="card projet-card">
-                <span class="projet-date">2023</span>
-                <h4>WSUS & GLPI</h4>
-                <p>Setup of WSUS for automatic updates and GLPI with glpi-event.</p>
-            </div>
+            <div class="card projet-card"><span class="projet-date">2025</span><h4>AD & Exchange</h4><p>AD and Exchange 2016 setup.</p></div>
+            <div class="card projet-card"><span class="projet-date">2024</span><h4>Kubernetes</h4><p>Internal apps on Kubernetes.</p></div>
+            <div class="card projet-card"><span class="projet-date">2024</span><h4>XWiki</h4><p>Procedure documentation.</p></div>
+            <div class="card projet-card"><span class="projet-date">2023</span><h4>Graylog & WSUS</h4><p>Server audit and automatic updates.</p></div>
+            <div class="card projet-card"><span class="projet-date">2023</span><h4>GLPI</h4><p>Asset management with glpi-event.</p></div>
         </div>
     </section>
 
     <section id="contact">
+        <h2>Contact</h2>
         <div class="contact-container">
             <div class="card">
-                <form onsubmit="window.open('mailto:guy_ramiranjato@yahoo.fr?body=' + encodeURIComponent(document.getElementById('msg').value)); return false;">
-                    <div class=\"form-row\">
-                        <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" required></div>
-                        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
-                    </div>
-                    <div class="form-group"><label>Message</label><textarea id="msg" rows="4" placeholder="How can I help you?" required></textarea></div>
-                    <button type="submit" class="btn-submit">Send Message</button>
+                <form>
+                    <input type="text" placeholder="Name" required style="margin-bottom:10px; display:block; width:100%; padding:10px;">
+                    <textarea placeholder="Message" rows="4" style="width:100%; padding:10px;"></textarea>
+                    <button class="btn-submit" style="margin-top:10px;">Send</button>
                 </form>
-            </div>
-            <div class="contact-sidebar">
-                <div class="card">
-                    <div class="info-item"><i class="fas fa-phone"></i><div><span class="label">Phone :</span><span class="value">034 90 433 38 / 032 84 104 08</span></div></div>
-                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><span class="label">Location :</span><span class="value">2011 Bis 67Ha N.O, Antananarivo</span></div></div>
-                </div>
             </div>
         </div>
     </section>
 </main>
+<footer><p>© 2026 – Guy Aymard Ramiranjato</p></footer>
 </body>
 </html>
